@@ -1,0 +1,11 @@
+<style>.tb{display:inline-block;margin:auto;padding:0.8em;font-size:1.2em;font-family:d2coding;resize:none;}h2{font-family:d2coding;}div{display:inline-block;}input,textarea{font-family:d2coding;width:100em;width:100ch;}</style>
+<br><body style='width:95%;height:100%;'>
+<textarea class="tb"id="0"rows="8"cols="96"placeholder="UTF-8 String"onkeyup="es(0,1)"></textarea><br><textarea style="border:none"class="tb"rows="1"cols="96"id="9"placeholder=">type '11' here to clear all"onkeyup="cc(this.id)"></textarea>
+<textarea class="tb"id="1"rows="8"cols="96"placeholder="Base64 String"onkeyup="ds(1,0)"></textarea>
+</body>
+<script>
+function ge(a){return document.getElementById(a)}
+function es(a,b){ge(b).value=btoa(unescape(encodeURIComponent(ge(a).value)))}
+function ds(a,b){ge(b).value=decodeURIComponent(escape(atob(ge(a).value)))}
+function cc(a){if(ge(a).value==11){ge(a).value="";ge(0).value="";ge(1).value=""}if(ge(a).value.length>1){ge(a).value=""}}
+</script>
